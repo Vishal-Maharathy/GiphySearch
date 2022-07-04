@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: white;
   height: 100vh; }
   body #bgImage {
     position: absolute;
@@ -25,9 +24,35 @@ body {
     transform: translateX(-50%) translateY(-50%);
     height: 100px;
     width: 100px;
-    background-color: #a3a3a3;
-    opacity: .5;
-    border-radius: 2px; }
+    background-color: rgba(163, 163, 163, 0.5);
+    border-radius: 2px;
+    text-align: center; }
+    body #container-media-outer input {
+      text-align: center;
+      width: 80%;
+      height: 5px;
+      border: none;
+      outline: 0;
+      font-size: 5px;
+      border-radius: 1px; }
+    body #container-media-outer #giphy-imgs-gifs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      height: 80%;
+      overflow: scroll; }
+      body #container-media-outer #giphy-imgs-gifs .gifs-giphy {
+        margin: 2px 2px 2px 2px;
+        height: 20px;
+        width: auto;
+        object-fit: cover;
+        border-radius: 1px; }
+    body #container-media-outer #giphy-imgs-gifs::-webkit-scrollbar {
+      display: none; }
   body #footer {
     position: absolute;
     bottom: 0;
