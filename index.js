@@ -17,7 +17,8 @@ app.use(sassMiddleware({
 }))
 app.use(express.static('assets'));
 
-let port = 8000;
+let port = process.env.PORT;
+if(!port){port=8000}
 var server = app.listen(port, function(err){
     if(err){
         console.log("Error running the server-> ", err);
