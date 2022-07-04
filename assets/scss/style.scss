@@ -27,8 +27,17 @@ body{
         transform: translateX(-50%) translateY(-50%);
         height: 100px;
         width: 100px;
-        background-color: aqua;
+        background-color: #a3a3a3;
         opacity: .5;
         border-radius: 2px;
+    }
+    #footer{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 6px;
+        color: #936b7a;
+        font-family: 'Smooch', cursive;
     }
 }
