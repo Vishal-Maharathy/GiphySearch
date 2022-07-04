@@ -8,13 +8,13 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use('/', require('./routes')); 
 
-app.use(sassMiddleware({
-    src: path.join(__dirname, '/assets', 'scss'),
-    dest: path.join(__dirname, '/assets', 'css'),
-    debug: true,
-    outputStyle: 'extended',
-    prefix: '/css'
-}))
+// app.use(sassMiddleware({
+//     src: path.join(__dirname, '/assets', 'scss'),
+//     dest: path.join(__dirname, '/assets', 'css'),
+//     debug: true,
+//     outputStyle: 'extended',
+//     prefix: '/css'
+// }))
 app.use(express.static('assets'));
 
 let port = process.env.PORT;

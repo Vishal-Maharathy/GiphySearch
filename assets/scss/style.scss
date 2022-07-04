@@ -26,25 +26,26 @@ body{
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
-        height: 25px;
-        width: 100px;
+        height: 100px;
+        width: 536px;
         background-color:rgba(163,163,163,.5);
-        border-radius: 2px;
+        border-radius: 6px;
         text-align: center;
         transition-duration: .5s;
         input{
             text-align: center;
             width: 80%;
-            height: 5px;
+            height: 35px;
             border: none;
             outline: 0;
-            font-size: 5px;
+            font-size: 20px;
             color: #686351;
-            border-radius: 1px;
+            border-radius: 3px;
+            margin-top: 30px;
             background-color: #b7ac95;        
         }
         #text-inside-container{
-            font-size: 10px;
+            font-size: 35px;
             color: #dddacd96;
         }
         #giphy-imgs-gifs{
@@ -58,13 +59,14 @@ body{
             height: 0%;
             overflow: scroll;
             transition-duration: 0.5s;
+            margin-top: 20px;
             .gifs-giphy{
-                margin: 2px 2px 2px 2px;
-                height: 20px;
+                margin: 10px 5px 10px 5px;
+                height:100px;
                 // width: 20px;
                 width: auto;
                 object-fit: cover;
-                border-radius: 1px;
+                border-radius: 3px;
                 cursor: pointer;
             }
         }
@@ -77,7 +79,7 @@ body{
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 6px;
+        font-size: 40px;
         color: #936b7a;
         font-family: 'Smooch', cursive;
     }
