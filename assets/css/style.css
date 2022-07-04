@@ -7,7 +7,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  height: 100vh; }
+  height: 100vh;
+  font-family: 'Finlandica', sans-serif; }
   body #bgImage {
     position: absolute;
     top: 0;
@@ -22,11 +23,12 @@ body {
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    height: 100px;
+    height: 25px;
     width: 100px;
     background-color: rgba(163, 163, 163, 0.5);
     border-radius: 2px;
-    text-align: center; }
+    text-align: center;
+    transition-duration: .5s; }
     body #container-media-outer input {
       text-align: center;
       width: 80%;
@@ -34,7 +36,12 @@ body {
       border: none;
       outline: 0;
       font-size: 5px;
-      border-radius: 1px; }
+      color: #686351;
+      border-radius: 1px;
+      background-color: #b7ac95; }
+    body #container-media-outer #text-inside-container {
+      font-size: 10px;
+      color: #dddacd96; }
     body #container-media-outer #giphy-imgs-gifs {
       display: flex;
       flex-wrap: wrap;
@@ -43,14 +50,16 @@ body {
       left: 50%;
       transform: translateX(-50%);
       width: 90%;
-      height: 80%;
-      overflow: scroll; }
+      height: 0%;
+      overflow: scroll;
+      transition-duration: 0.5s; }
       body #container-media-outer #giphy-imgs-gifs .gifs-giphy {
         margin: 2px 2px 2px 2px;
         height: 20px;
         width: auto;
         object-fit: cover;
-        border-radius: 1px; }
+        border-radius: 1px;
+        cursor: pointer; }
     body #container-media-outer #giphy-imgs-gifs::-webkit-scrollbar {
       display: none; }
   body #footer {

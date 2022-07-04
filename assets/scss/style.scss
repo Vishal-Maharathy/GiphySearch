@@ -10,6 +10,7 @@ body{
     background-color: black;
     // color: white;
     height: 100vh;
+    font-family: 'Finlandica', sans-serif;
     #bgImage{
         position: absolute;
         top: 0;
@@ -25,11 +26,12 @@ body{
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
-        height: 100px;
+        height: 25px;
         width: 100px;
         background-color:rgba(163,163,163,.5);
         border-radius: 2px;
         text-align: center;
+        transition-duration: .5s;
         input{
             text-align: center;
             width: 80%;
@@ -37,7 +39,13 @@ body{
             border: none;
             outline: 0;
             font-size: 5px;
-            border-radius: 1px;            
+            color: #686351;
+            border-radius: 1px;
+            background-color: #b7ac95;        
+        }
+        #text-inside-container{
+            font-size: 10px;
+            color: #dddacd96;
         }
         #giphy-imgs-gifs{
             display: flex;
@@ -47,8 +55,9 @@ body{
             left: 50%;
             transform: translateX(-50%);
             width: 90%;
-            height: 80%;
+            height: 0%;
             overflow: scroll;
+            transition-duration: 0.5s;
             .gifs-giphy{
                 margin: 2px 2px 2px 2px;
                 height: 20px;
@@ -56,6 +65,7 @@ body{
                 width: auto;
                 object-fit: cover;
                 border-radius: 1px;
+                cursor: pointer;
             }
         }
         #giphy-imgs-gifs::-webkit-scrollbar{
